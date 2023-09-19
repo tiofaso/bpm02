@@ -39,24 +39,26 @@ public class bpm2_03 {
 
         int n = entrada.nextInt();
 
-        if(n < 0) {
+        if (n < 0) {
             System.out.println("Número inválido!");
             int erro = 1;
 
-            while (erro == 1){
+            while (erro == 1) {
                 System.out.println("Digite um número positivo para eu mostrar a sequência de Fibonacci!");
                 n = entrada.nextInt();
 
-                if (n < 0){
+                if (n < 0) {
                     System.out.println("Número inválido!");
-                }else { erro = 0;}
+                } else {
+                    erro = 0;
+                }
             }
 
         }
 
-        if(n == 0 || n == 1) {
+        if (n == 0 || n == 1) {
             System.out.println("Fibonacci de " + n + " números é: " + n);
-        }else {
+        } else {
             long[] fibonacci = new long[n];
 
             fibonacci[0] = 0;
